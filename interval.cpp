@@ -3,7 +3,7 @@
 /// @author George Downing
 /// @date 16-12-2022
 /// @details This file contains the implementation of the interval class. This class performs interval arithmetic on two intervals by overloading the operators +, -, *, /, +=, -=, *=, /=, <<, >>.
-
+/// @details DOxygen documentation: https://georgedowning20.github.io/The-Interval-Arithmetic-Project/files.html
 //---------------------------------------------------------------------------------------------------------------------
 //                                                    include files
 //---------------------------------------------------------------------------------------------------------------------
@@ -68,6 +68,7 @@ double interval::find_max(double a, double b, double c, double d)
 //---------------------------------------------------------------------------------------------------------------------
 
 /// @details This function overloads the + operator to add two intervals together. A temporary interval is created and the min and max values are added together. the temporary interval is then returned.
+/// @par Test Data: #main
 interval interval::operator+(interval const &obj)
 {
     interval temp; // create a temporary interval
