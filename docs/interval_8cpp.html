@@ -113,7 +113,7 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>George Downing </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>16-12-2022</dd></dl>
 <p>This file contains the implementation of the interval class. This class performs interval arithmetic on two intervals by overloading the operators +, -, *, /, +=, -=, *=, /=, &lt;&lt;, &gt;&gt;.</p>
-<p>DOxygen documentation: <a href="https://georgedowning20.github.io/The-Interval-Arithmetic-Project/files.html">https://georgedowning20.github.io/The-Interval-Arithmetic-Project/files.html</a> </p>
+<p>Doxygen documentation: <a href="https://georgedowning20.github.io/The-Interval-Arithmetic-Project/files.html">https://georgedowning20.github.io/The-Interval-Arithmetic-Project/files.html</a> </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a27cd92f593fce275f9e12b9247020dad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27cd92f593fce275f9e12b9247020dad">&#9670;&nbsp;</a></span>operator*()</h2>
@@ -140,7 +140,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function overloads the * operator to multiply a interval by a double. A temporary interval is created and all permutations of the min and max values are multiplied together. The minimum and maximum values are then found using the <a class="el" href="classinterval.html#ae8b9e25b557a1b544f0a0e01264de825" title="Finds the minimum of four values.">interval::find_min</a> and <a class="el" href="classinterval.html#abf6f13478f9f2e5f28503a916922928e" title="Finds the maximum of four values.">interval::find_max</a> functions and written to the temporary interval. The temporary interval is then returned. </p>
+<p>This function overloads the * operator to multiply a interval by a double. A temporary interval is created and all permutations of the min and max values are multiplied together. The minimum and maximum values are then found using the <a class="el" href="classinterval.html#ae8b9e25b557a1b544f0a0e01264de825" title="Finds the minimum of four values.">interval::find_min</a> and <a class="el" href="classinterval.html#abf6f13478f9f2e5f28503a916922928e" title="Finds the maximum of four values.">interval::find_max</a> functions and written to the temporary interval. The temporary interval is then returned. </p><dl class="section user"><dt>Test Data: Example/Example.cpp </dt><dd></dd></dl>
 
 </div>
 </div>
@@ -169,7 +169,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function overloads the + operator to add a interval to a double. A temporary interval is created and the value of the double is added to the temporary interval. The temporary interval is then returned. </p>
+<p>This function overloads the + operator to add a interval to a double. A temporary interval is created and the value of the double is added to the temporary interval. The temporary interval is then returned. </p><dl class="section user"><dt>Test Data: Example/Example.cpp </dt><dd></dd></dl>
 
 </div>
 </div>
@@ -198,7 +198,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function overloads the - operator to subtract a interval from a double. A temporary interval is created and the value of the double is subtracted from the temporary interval. The temporary interval is then returned. </p>
+<p>This function overloads the - operator to subtract a interval from a double. A temporary interval is created and the value of the double is subtracted from the temporary interval. The temporary interval is then returned. </p><dl class="section user"><dt>Test Data: Example/Example.cpp </dt><dd></dd></dl>
 
 </div>
 </div>
@@ -227,7 +227,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function overloads the / operator to divide a interval by a double. A temporary interval is created and all permutations of the min and max values are divided together. The minimum and maximum values are then found using the <a class="el" href="classinterval.html#ae8b9e25b557a1b544f0a0e01264de825" title="Finds the minimum of four values.">interval::find_min</a> and <a class="el" href="classinterval.html#abf6f13478f9f2e5f28503a916922928e" title="Finds the maximum of four values.">interval::find_max</a> functions and written to the temporary interval. The temporary interval is then returned. </p>
+<p>This function overloads the / operator to divide a interval by a double. A temporary interval is created and all permutations of the min and max values are divided together. The minimum and maximum values are then found using the <a class="el" href="classinterval.html#ae8b9e25b557a1b544f0a0e01264de825" title="Finds the minimum of four values.">interval::find_min</a> and <a class="el" href="classinterval.html#abf6f13478f9f2e5f28503a916922928e" title="Finds the maximum of four values.">interval::find_max</a> functions and written to the temporary interval. The temporary interval is then returned. </p><dl class="section user"><dt>Test Data: Example/Example.cpp </dt><dd></dd></dl>
 
 </div>
 </div>
@@ -256,7 +256,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function overloads the &lt;&lt; operator to print an interval to an ostream. The min and max values of the interval are printed to the ostream. The ostream is then returned. </p>
+<p>This function overloads the &lt;&lt; operator to print an interval to an ostream. The min and max values of the interval are printed to the ostream. The ostream is then returned. </p><dl class="section user"><dt>Test Data: Example/Example.cpp </dt><dd></dd></dl>
 
 </div>
 </div>
@@ -285,7 +285,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function overloads the &gt;&gt; operator to read an interval from an istream. The min and max values of the interval are read from the istream. The interval is then set to the min and max values. The istream is then returned. </p>
+<p>This function overloads the &gt;&gt; operator to read an interval from an istream. The min and max values of the interval are read from the istream. The interval is then set to the min and max values. The istream is then returned. </p><dl class="section user"><dt>Test Data: Example/Example.cpp </dt><dd></dd></dl>
 
 </div>
 </div>

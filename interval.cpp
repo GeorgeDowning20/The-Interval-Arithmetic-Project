@@ -3,7 +3,7 @@
 /// @author George Downing
 /// @date 16-12-2022
 /// @details This file contains the implementation of the interval class. This class performs interval arithmetic on two intervals by overloading the operators +, -, *, /, +=, -=, *=, /=, <<, >>.
-/// @details DOxygen documentation: https://georgedowning20.github.io/The-Interval-Arithmetic-Project/files.html
+/// @details Doxygen documentation: https://georgedowning20.github.io/The-Interval-Arithmetic-Project/files.html
 //---------------------------------------------------------------------------------------------------------------------
 //                                                    include files
 //---------------------------------------------------------------------------------------------------------------------
@@ -68,7 +68,7 @@ double interval::find_max(double a, double b, double c, double d)
 //---------------------------------------------------------------------------------------------------------------------
 
 /// @details This function overloads the + operator to add two intervals together. A temporary interval is created and the min and max values are added together. the temporary interval is then returned.
-/// @par Test Data: #main
+/// @par Test Data: Example/Example.cpp
 interval interval::operator+(interval const &obj)
 {
     interval temp; // create a temporary interval
@@ -80,6 +80,7 @@ interval interval::operator+(interval const &obj)
 }
 
 /// @details This function overloads the - operator to subtract two intervals together. A temporary interval is created and the min and max values are subtracted together. the temporary interval is then returned.
+/// @par Test Data: Example/Example.cpp
 interval interval::operator-(interval const &obj)
 {
     interval temp; // create a temporary interval
@@ -91,6 +92,7 @@ interval interval::operator-(interval const &obj)
 }
 
 /// @details This function overloads the * operator to multiply two intervals together. A temporary interval is created and all permutations of the min and max values are multiplied together. The minimum and maximum values are then found using the #interval::find_min and #interval::find_max functions and written to the temporary interval. The temporary interval is then returned.
+/// @par Test Data: #Example/Example.cpp
 interval interval::operator*(interval const &obj)
 {
     interval temp; // create a temporary interval
@@ -107,6 +109,7 @@ interval interval::operator*(interval const &obj)
 }
 
 /// @details This function overloads the / operator to divide two intervals together. A temporary interval is created and all permutations of the min and max values are divided together. The minimum and maximum values are then found using the #interval::find_min and #interval::find_max functions and written to the temporary interval. The temporary interval is then returned.
+/// @par Test Data: Example/Example.cpp
 interval interval::operator/(interval const &obj)
 {
     interval temp; // create a temporary interval
@@ -127,6 +130,7 @@ interval interval::operator/(interval const &obj)
 //---------------------------------------------------------------------------------------------------------------------
 
 /// @details This function overloads the += operator to add and assign an interval to another interval. The min and max values are added to the interval. The value of the interval is then assigned to the object that called the operator.
+/// @par Test Data: Example/Example.cpp
 interval interval::operator+=(interval const &obj)
 {
     Min += obj.Min; // add the min values together
@@ -136,6 +140,7 @@ interval interval::operator+=(interval const &obj)
 }
 
 /// @details This function overloads the -= operator to subtract and assign an interval to another interval. The min and max values are subtracted from the interval. The value of the interval is then assigned to the object that called the operator.
+/// @par Test Data: Example/Example.cpp
 interval interval::operator-=(interval const &obj)
 {
     Min -= obj.Max; // subtract the max values
@@ -145,6 +150,7 @@ interval interval::operator-=(interval const &obj)
 }
 
 /// @details This function overloads the *= operator to multiply and assign an interval to another interval. All permutations of the min and max values are multiplied together. The minimum and maximum values are then found using the #interval::find_min and #interval::find_max functions and written to the interval. The value of the interval is then assigned to the object that called the operator.
+/// @par Test Data: Example/Example.cpp
 interval interval::operator*=(interval const &obj)
 {
     double a = Min * obj.Min; // multiply the min values
@@ -159,6 +165,7 @@ interval interval::operator*=(interval const &obj)
 }
 
 /// @details This function overloads the /= operator to divide and assign an interval to another interval. All permutations of the min and max values are divided together. The minimum and maximum values are then found using the #interval::find_min and #interval::find_max functions and written to the interval. The value of the interval is then assigned to the object that called the operator.
+/// @par Test Data: Example/Example.cpp
 interval interval::operator/=(interval const &obj)
 {
     double a = Min / obj.Min; // divide the min values
@@ -177,6 +184,7 @@ interval interval::operator/=(interval const &obj)
 //---------------------------------------------------------------------------------------------------------------------
 
 /// @details This function overloads the + operator to add a double to a interval. A temporary interval is created and the value of the double is added to the temporary interval. The temporary interval is then returned.
+/// @par Test Data: Example/Example.cpp
 interval interval::operator+(double const &obj)
 {
     interval temp; // create a temporary interval
@@ -188,6 +196,7 @@ interval interval::operator+(double const &obj)
 }
 
 /// @details This function overloads the - operator to subtract a double from a interval. A temporary interval is created and the value of the double is subtracted from the temporary interval. The temporary interval is then returned.
+/// @par Test Data: Example/Example.cpp
 interval interval::operator-(double const &obj)
 {
     interval temp; // create a temporary interval
@@ -199,6 +208,7 @@ interval interval::operator-(double const &obj)
 }
 
 /// @details This function overloads the * operator to multiply a double by a interval. A temporary interval is created and all permutations of the min and max values are multiplied together. The minimum and maximum values are then found using the #interval::find_min and #interval::find_max functions and written to the temporary interval. The temporary interval is then returned.
+/// @par Test Data: Example/Example.cpp
 interval interval::operator*(double const &obj)
 {
     interval temp; // create a temporary interval
@@ -215,6 +225,7 @@ interval interval::operator*(double const &obj)
 }
 
 /// @details This function overloads the / operator to divide a double by a interval. A temporary interval is created and all permutations of the min and max values are divided together. The minimum and maximum values are then found using the #interval::find_min and #interval::find_max functions and written to the temporary interval. The temporary interval is then returned.
+/// @par Test Data: Example/Example.cpp
 interval interval::operator/(double const &obj)
 {
     interval temp; // create a temporary interval
@@ -235,6 +246,7 @@ interval interval::operator/(double const &obj)
 //---------------------------------------------------------------------------------------------------------------------
 
 /// @details This function overloads the += operator to add and assign a double to an interval. The double is added to the min and max values of the interval. The value of the interval is then assigned to the object that called the operator.
+/// @par Test Data: Example/Example.cpp
 interval interval::operator+=(double const &obj)
 {
     Min += obj; // add the double to the min value
@@ -244,6 +256,7 @@ interval interval::operator+=(double const &obj)
 }
 
 /// @details This function overloads the -= operator to subtract and assign a double from an interval. The double is subtracted from the min and max values of the interval. The value of the interval is then assigned to the object that called the operator.
+/// @par Test Data: Example/Example.cpp
 interval interval::operator-=(double const &obj)
 {
     Min -= obj; // subtract the double from the min value
@@ -253,6 +266,7 @@ interval interval::operator-=(double const &obj)
 }
 
 /// @details This function overloads the *= operator to multiply and assign a double to an interval. All permutations of the min and max values are multiplied together. The minimum and maximum values are then found using the #interval::find_min and #interval::find_max functions and written to the interval. The value of the interval is then assigned to the object that called the operator.
+/// @par Test Data: Example/Example.cpp
 interval interval::operator*=(double const &obj)
 {
     double a = Min * obj; // multiply the min value by the double
@@ -267,6 +281,7 @@ interval interval::operator*=(double const &obj)
 }
 
 /// @details This function overloads the /= operator to divide and assign a double by an interval. All permutations of the min and max values are divided together. The minimum and maximum values are then found using the #interval::find_min and #interval::find_max functions and written to the interval. The value of the interval is then assigned to the object that called the operator.
+/// @par Test Data: Example/Example.cpp
 interval interval::operator/=(double const &obj)
 {
     double a = Min / obj; // divide the min value by the double
@@ -285,6 +300,7 @@ interval interval::operator/=(double const &obj)
 //---------------------------------------------------------------------------------------------------------------------
 
 /// @details This function overloads the + operator to add a interval to a double. A temporary interval is created and the value of the double is added to the temporary interval. The temporary interval is then returned.
+/// @par Test Data: Example/Example.cpp
 interval operator+(double const &obj, interval const &obj2)
 {
     interval temp; // create a temporary interval
@@ -296,6 +312,7 @@ interval operator+(double const &obj, interval const &obj2)
 }
 
 /// @details This function overloads the - operator to subtract a interval from a double. A temporary interval is created and the value of the double is subtracted from the temporary interval. The temporary interval is then returned.
+/// @par Test Data: Example/Example.cpp
 interval operator-(double const &obj, interval const &obj2)
 {
     interval temp; // create a temporary interval
@@ -307,6 +324,7 @@ interval operator-(double const &obj, interval const &obj2)
 }
 
 /// @details This function overloads the * operator to multiply a interval by a double. A temporary interval is created and all permutations of the min and max values are multiplied together. The minimum and maximum values are then found using the #interval::find_min and #interval::find_max functions and written to the temporary interval. The temporary interval is then returned.
+/// @par Test Data: Example/Example.cpp
 interval operator*(double const &obj, interval const &obj2)
 {
     interval temp; // create a temporary interval
@@ -323,6 +341,7 @@ interval operator*(double const &obj, interval const &obj2)
 }
 
 /// @details This function overloads the / operator to divide a interval by a double. A temporary interval is created and all permutations of the min and max values are divided together. The minimum and maximum values are then found using the #interval::find_min and #interval::find_max functions and written to the temporary interval. The temporary interval is then returned.
+/// @par Test Data: Example/Example.cpp
 interval operator/(double const &obj, interval const &obj2)
 {
     interval temp; // create a temporary interval
@@ -343,6 +362,7 @@ interval operator/(double const &obj, interval const &obj2)
 //---------------------------------------------------------------------------------------------------------------------
 
 /// @details This function overloads the << operator to print an interval to an ostream. The min and max values of the interval are printed to the ostream. The ostream is then returned.
+/// @par Test Data: Example/Example.cpp
 std::ostream &operator<<(std::ostream &os, interval const &obj)
 {
     os << "[" << obj.min() << ", " << obj.max() << "]"; // print the interval
@@ -350,6 +370,7 @@ std::ostream &operator<<(std::ostream &os, interval const &obj)
 }
 
 /// @details This function overloads the >> operator to read an interval from an istream. The min and max values of the interval are read from the istream. The interval is then set to the min and max values. The istream is then returned.
+/// @par Test Data: Example/Example.cpp
 std::istream &operator>>(std::istream &is, interval &obj)
 {
     double min, max;          // create variables for the min and max values
