@@ -1,0 +1,7 @@
+<map id="interval::operator*=" name="interval::operator*=">
+<area shape="rect" id="node1" title="Operator overload for multiplication AND assignment of an interval." alt="" coords="5,31,137,57"/>
+<area shape="rect" id="node2" href="$classinterval.html#abf6f13478f9f2e5f28503a916922928e" title="Finds the maximum of four values." alt="" coords="185,5,311,32"/>
+<area shape="rect" id="node4" href="$classinterval.html#ae8b9e25b557a1b544f0a0e01264de825" title="Finds the minimum of four values." alt="" coords="187,56,309,83"/>
+<area shape="rect" id="node3" href="$classinterval.html#aaf7a8831d393d411fbed78d1b42b0a2c" title="Gets the maximum value of the interval." alt="" coords="359,5,456,32"/>
+<area shape="rect" id="node5" href="$classinterval.html#ad6ff579615de21850255007fe33a06d1" title="Gets the minimum value of the interval." alt="" coords="361,56,454,83"/>
+</map>
