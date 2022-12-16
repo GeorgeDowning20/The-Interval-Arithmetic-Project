@@ -4,6 +4,7 @@
 /// @date 16-12-2022
 /// @details This file contains the implementation of the interval class. This class performs interval arithmetic on two intervals by overloading the operators +, -, *, /, +=, -=, *=, /=, <<, >>.
 /// @details Doxygen documentation: https://georgedowning20.github.io/The-Interval-Arithmetic-Project/files.html
+
 //---------------------------------------------------------------------------------------------------------------------
 //                                                    include files
 //---------------------------------------------------------------------------------------------------------------------
