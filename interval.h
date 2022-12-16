@@ -4,7 +4,7 @@
 /// @date 16-12-2022
 /// @version 1.0
 /// @details This file declares thh interval arithmetic class. its purpose it to perform interval arithmetic on two intervals by overloading the operators +, -, *, /, +=, -=, *=, /=, <<, >>.
-
+/// @details DOxygen documentation: https://georgedowning20.github.io/The-Interval-Arithmetic-Project/files.html
 //---------------------------------------------------------------------------------------------------------------------
 //                                                 #includes
 //---------------------------------------------------------------------------------------------------------------------
